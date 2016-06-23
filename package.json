@@ -1,0 +1,34 @@
+{
+  "name": "react-native-jqestylo",
+  "version": "0.2.1",
+  "description": "Graphics library to improve programming with React-Native",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juanq123/react-native-jqestyle.git"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "ios",
+    "android",
+    "react-native-jqestylo",
+    "estylo",
+    "buttons",
+    "navbar",
+    "textinput",
+    "input",
+    "text",
+    "image",
+    "statusBarIos"
+  ],
+  "author": {
+    "name": "juanq123",
+    "email": "375371818@qq.com"
+  },
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/juanq123/react-native-jqestyle/issues"
+  },
+  "homepage": "https://github.com/juanq123/react-native-jqestyle"
+}
