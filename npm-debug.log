@@ -1,0 +1,84 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/5.5.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'adduser' ]
+2 info using npm@3.5.3
+3 info using node@v5.5.0
+4 verbose adduser before first PUT { _id: 'org.couchdb.user:juanq123',
+4 verbose adduser   name: 'juanq123',
+4 verbose adduser   password: 'XXXXX',
+4 verbose adduser   email: '375371818@qq.com',
+4 verbose adduser   type: 'user',
+4 verbose adduser   roles: [],
+4 verbose adduser   date: '2016-06-23T06:58:51.689Z' }
+5 verbose request uri https://registry.npm.taobao.org/-/user/org.couchdb.user:juanq123
+6 verbose request new user, so can't send auth
+7 info attempt registry request try #1 at 14:58:51
+8 verbose request id 61cc748dc6dfabdd
+9 http request PUT https://registry.npm.taobao.org/-/user/org.couchdb.user:juanq123
+10 http 409 https://registry.npm.taobao.org/-/user/org.couchdb.user:juanq123
+11 verbose headers { date: 'Thu, 23 Jun 2016 06:58:52 GMT',
+11 verbose headers   'content-type': 'application/json; charset=utf-8',
+11 verbose headers   'content-length': '61',
+11 verbose headers   connection: 'keep-alive',
+11 verbose headers   'x-readtime': '13' }
+12 verbose request invalidating /Users/jq/.npm/registry.npm.taobao.org/-/user/org.couchdb.user_3Ajuanq123 on PUT
+13 verbose adduser update existing user
+14 verbose request uri https://registry.npm.taobao.org/-/user/org.couchdb.user:juanq123?write=true
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 14:58:52
+17 http request GET https://registry.npm.taobao.org/-/user/org.couchdb.user:juanq123?write=true
+18 http 200 https://registry.npm.taobao.org/-/user/org.couchdb.user:juanq123?write=true
+19 verbose headers { date: 'Thu, 23 Jun 2016 06:58:52 GMT',
+19 verbose headers   'content-type': 'application/json; charset=utf-8',
+19 verbose headers   'content-length': '328',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   etag: '"148-QD3/VUCOsqDE3/daFhz5XA"',
+19 verbose headers   'x-readtime': '6' }
+20 verbose adduser userobj { _id: 'org.couchdb.user:juanq123',
+20 verbose adduser   name: 'juanq123',
+20 verbose adduser   password: 'XXXXX',
+20 verbose adduser   email: '375371818@qq.com',
+20 verbose adduser   type: 'user',
+20 verbose adduser   roles: [],
+20 verbose adduser   date: '2016-06-23T06:58:51.689Z' }
+21 verbose request uri https://registry.npm.taobao.org/-/user/org.couchdb.user:juanq123/-rev/1-5238776b8849e8a1211bfc97f35a378c
+22 verbose request updating existing user; sending authorization
+23 info attempt registry request try #1 at 14:58:52
+24 http request PUT https://registry.npm.taobao.org/-/user/org.couchdb.user:juanq123/-rev/1-5238776b8849e8a1211bfc97f35a378c
+25 http 401 https://registry.npm.taobao.org/-/user/org.couchdb.user:juanq123/-rev/1-5238776b8849e8a1211bfc97f35a378c
+26 verbose headers { date: 'Thu, 23 Jun 2016 06:58:52 GMT',
+26 verbose headers   'content-type': 'application/json; charset=utf-8',
+26 verbose headers   'content-length': '47',
+26 verbose headers   connection: 'keep-alive',
+26 verbose headers   'x-readtime': '9' }
+27 verbose request invalidating /Users/jq/.npm/registry.npm.taobao.org/-/user/org.couchdb.user_3Ajuanq123 on PUT
+28 verbose adduser back [ { [Error: unauthorized Login first: -/user/org.couchdb.user:juanq123/-rev/1-5238776b8849e8a1211bfc97f35a378c] statusCode: 401, code: 'E401' },
+28 verbose adduser   { error: 'unauthorized', reason: 'Login first' },
+28 verbose adduser   '{"error":"unauthorized","reason":"Login first"}' ]
+29 warn adduser Incorrect username or password
+29 warn adduser You can reset your account by visiting:
+29 warn adduser
+29 warn adduser     https://npmjs.org/forgot
+30 verbose stack Error: unauthorized Login first: -/user/org.couchdb.user:juanq123/-rev/1-5238776b8849e8a1211bfc97f35a378c
+30 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+30 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+30 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+30 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+30 verbose stack     at emitTwo (events.js:100:13)
+30 verbose stack     at Request.emit (events.js:185:7)
+30 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1035:10)
+30 verbose stack     at emitOne (events.js:95:20)
+30 verbose stack     at Request.emit (events.js:182:7)
+30 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:962:12)
+31 verbose statusCode 401
+32 verbose cwd /Users/jq/react-native-jqestyle
+33 error Darwin 15.5.0
+34 error argv "/usr/local/Cellar/node/5.5.0/bin/node" "/usr/local/bin/npm" "adduser"
+35 error node v5.5.0
+36 error npm  v3.5.3
+37 error code E401
+38 error unauthorized Login first: -/user/org.couchdb.user:juanq123/-rev/1-5238776b8849e8a1211bfc97f35a378c
+39 error If you need help, you may report this error at:
+39 error     <https://github.com/npm/npm/issues>
+40 verbose exit [ 1, true ]

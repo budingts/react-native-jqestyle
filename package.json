@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/juanq123/react-native-jqestyle.git"
+    "url": "git+https://github.com/juanq123/react-native-jqestyle.git"
   },
   "keywords": [
     "react-native",
@@ -22,13 +22,15 @@
     "image",
     "statusBarIos"
   ],
-  "author": {
-    "name": "juanq123",
-    "email": "375371818@qq.com"
-  },
-  "license": "Apache",
+  "author": "juanq123 <375371818@qq.com>",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/juanq123/react-native-jqestyle/issues"
   },
-  "homepage": "https://github.com/juanq123/react-native-jqestyle"
+  "homepage": "https://github.com/juanq123/react-native-jqestyle",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
